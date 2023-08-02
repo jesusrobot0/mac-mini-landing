@@ -1,3 +1,11 @@
+import { Navbar } from './components'
+
 export default function HomePage() {
-  return <h1>hola mundo</h1>
+  return (
+    <>
+      <header>
+        <Navbar />
+      </header>
+    </>
+  )
 }
