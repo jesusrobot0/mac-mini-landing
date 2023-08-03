@@ -1,8 +1,16 @@
+'use client'
+import { useState } from 'react'
 import '../navbar/Navbar.css'
 
 export function Navbar() {
+  const [toggleMenu, setToggleMenu] = useState(false)
+
+  const headerClasses = 'main-header place-center' + (toggleMenu ? ' is-active' : '')
+
+  const handleToggleMenu = () => setToggleMenu(!toggleMenu)
+
   return (
-    <header className="main-header place-center">
+    <header className={headerClasses}>
       <nav className="nav container">
         <a href="#" className="title">
           Mac mini
@@ -25,7 +33,7 @@ export function Navbar() {
               </a>
             </li>
           </ul>
-          <button className="menu-button" id="menu-button"></button>
+          <button className="menu-button" onClick={handleToggleMenu}></button>
           <a href="#" className="button tiny">
             Comprar
           </a>
