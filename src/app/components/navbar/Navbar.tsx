@@ -40,7 +40,11 @@ export function Navbar() {
               </a>
             </li>
           </ul>
-          <button className="menu-button" onClick={handleToggleMenu}></button>
+          <button
+            className="menu-button"
+            onClick={handleToggleMenu}
+            aria-label="Menu Button"
+          ></button>
           <a href="#" className="button tiny">
             Comprar
           </a>
