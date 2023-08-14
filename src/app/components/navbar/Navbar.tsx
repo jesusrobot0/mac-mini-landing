@@ -1,5 +1,6 @@
 'use client'
-import { useState } from 'react'
+
+import { KeyboardEvent, useState } from 'react'
 import '../navbar/Navbar.css'
 
 export function Navbar() {
@@ -9,8 +10,14 @@ export function Navbar() {
 
   const handleToggleMenu = () => setToggleMenu(!toggleMenu)
 
+  const handleCloseMenu = (event: KeyboardEvent) => {
+    if (event.code === 'Escape') {
+      setToggleMenu(!toggleMenu)
+    }
+  }
+
   return (
-    <header className={headerClasses}>
+    <header className={headerClasses} onKeyDown={handleCloseMenu}>
       <nav className="nav container">
         <a href="#" className="title">
           Mac mini
@@ -18,17 +25,17 @@ export function Navbar() {
         <div className="place-center space">
           <ul id="main-menu" className="main-menu">
             <li className="item">
-              <a href="#" className="link">
+              <a href="#" className="link" onClick={handleToggleMenu}>
                 Descripción
               </a>
             </li>
             <li className="item">
-              <a href="#" className="link">
+              <a href="#" className="link" onClick={handleToggleMenu}>
                 Por qué la Mac
               </a>
             </li>
             <li className="item">
-              <a href="#" className="link">
+              <a href="#" className="link" onClick={handleToggleMenu}>
                 Especificaciones
               </a>
             </li>
@@ -39,6 +46,7 @@ export function Navbar() {
           </a>
         </div>
       </nav>
+      <div className="main-overlay" onClick={handleToggleMenu}></div>
     </header>
   )
 }
