@@ -9,12 +9,14 @@ export function HeroBanner() {
           alt="Portada de la página Mac mini m1"
           className="picture"
           fill
+          priority
         />
         <Image
           src="/media/img/hero-image-dark.jpg"
           alt="Portada de la página Mac mini m1"
           className="picture dark"
           fill
+          priority
         />
       </div>
       <div className="container">
