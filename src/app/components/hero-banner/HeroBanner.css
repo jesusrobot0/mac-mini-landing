@@ -40,7 +40,7 @@
   line-height: 1.05;
   letter-spacing: -0.015em;
   font-weight: var(--bold-font);
-  margin-bottom: 1.25rem;
+  padding-bottom: 1.25rem;
 
   /* background gradient */
 
@@ -56,7 +56,7 @@
   margin-bottom: 2.5rem;
 }
 
-.hero-banner :is(.subtitle, .hero-cta) {
+.hero-banner :is(.subtitle, .cta-container) {
   font-size: 1.25rem;
 }
 
@@ -81,4 +81,67 @@
 .hero-banner .hero-cta {
   color: var(--text-color);
   font-weight: var(--normal-font);
+}
+
+/* ---------- tablet styles ---------- */
+
+@media screen and (min-width: 734px) {
+  .hero-image {
+    width: 66rem;
+    height: 39rem;
+  }
+
+  .hero-banner .container {
+    margin-top: -8rem;
+  }
+
+  .hero-banner .product-title {
+    margin-bottom: 1rem;
+  }
+
+  .hero-banner .title {
+    font-size: 5rem;
+  }
+
+  .hero-banner :is(.subtitle, .cta-container) {
+    font-size: var(--big-body-size);
+    flex-direction: row;
+  }
+
+  .hero-banner .subtitle .chip {
+    --size: 6rem;
+  }
+
+  .hero-banner .cta-container {
+    gap: 0;
+  }
+
+  .hero-banner .hero-cta:first-of-type::after {
+    content: '|';
+    padding-inline: 2rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .hero-banner {
+    margin-top: -2.5rem;
+  }
+
+  .hero-image {
+    width: 84rem;
+    height: 50rem;
+  }
+
+  .hero-banner .container {
+    margin-top: -13.5rem;
+  }
+
+  .hero-banner .title {
+    font-size: 6rem;
+  }
+
+  .hero-banner .description {
+    max-width: 56rem;
+    margin-inline: auto;
+  }
 }
