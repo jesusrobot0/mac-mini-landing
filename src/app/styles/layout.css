@@ -4,6 +4,11 @@
   align-items: center;
 }
 
+.center-x {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
 .container {
   margin-inline: auto;
   width: 87.5%;

@@ -24,6 +24,11 @@
   --time: 150ms;
 }
 
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: calc(var(--header-height) + 3rem);
+}
+
 body {
   font-family: var(--body-font);
   color: var(--text-color);
@@ -45,6 +50,18 @@ a:hover {
   text-decoration: underline;
 }
 
+a.arrow {
+  display: inline-block;
+}
+
+a.arrow::after {
+  content: '\e900';
+  display: inline;
+  padding-left: 0.25rem;
+  font-size: 0.65rem;
+  font-family: 'icomoon' !important;
+}
+
 .black-background {
   background-color: var(--bg-color);
 }
@@ -62,3 +79,9 @@ a:hover {
 @media screen and (min-width: 1024px) {}
 
 */
+
+/* TODO: delete when sections are ready */
+
+.section-placeholder {
+  min-height: 100vh;
+}

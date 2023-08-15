@@ -19,23 +19,23 @@ export function Navbar() {
   return (
     <header className={headerClasses} onKeyDown={handleCloseMenu}>
       <nav className="nav container">
-        <a href="#" className="title">
+        <a href="#description" className="title">
           Mac mini
         </a>
         <div className="place-center space">
           <ul id="main-menu" className="main-menu">
             <li className="item">
-              <a href="#" className="link" onClick={handleToggleMenu}>
+              <a href="#description" className="link" onClick={handleToggleMenu}>
                 Descripción
               </a>
             </li>
             <li className="item">
-              <a href="#" className="link" onClick={handleToggleMenu}>
+              <a href="#why-mac" className="link" onClick={handleToggleMenu}>
                 Por qué la Mac
               </a>
             </li>
             <li className="item">
-              <a href="#" className="link" onClick={handleToggleMenu}>
+              <a href="#specs" className="link" onClick={handleToggleMenu}>
                 Especificaciones
               </a>
             </li>

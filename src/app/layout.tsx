@@ -3,6 +3,7 @@ import type { Metadata } from 'next'
 import './styles/typography.css'
 import './styles/base.css'
 import './styles/layout.css'
+import '../../public/icons/style.css'
 
 export const metadata: Metadata = {
   title: 'Create Next App',
