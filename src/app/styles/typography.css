@@ -124,3 +124,15 @@ h6 {
   font-weight: var(--medium-font);
   line-height: var(--title-line-height);
 }
+
+@media screen and (min-width: 734px) {
+  .big-description {
+    max-width: var(--large-max-width);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .big-description {
+    min-width: var(--small-max-width);
+  }
+}

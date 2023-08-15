@@ -15,6 +15,12 @@
   max-width: calc(17.5rem, 4rem);
 }
 
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 10rem;
+}
+
 @media screen and (min-width: 734px) {
   .container {
     width: 100%;
