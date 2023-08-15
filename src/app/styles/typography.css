@@ -3,8 +3,7 @@
   font-style: normal;
   font-weight: 400;
   font-display: auto;
-  src: local('SF Pro Text'),
-    url('/fonts/SFProText-Regular.woff2') format('woff2');
+  src: local('SF Pro Text'), url('/fonts/SFProText-Regular.woff2') format('woff2');
 }
 
 @font-face {
@@ -12,8 +11,7 @@
   font-style: normal;
   font-weight: 400;
   font-display: auto;
-  src: local('SF Pro Text'),
-    url('/fonts/SFProDisplay-Regular.woff2') format('woff2');
+  src: local('SF Pro Text'), url('/fonts/SFProDisplay-Regular.woff2') format('woff2');
 }
 
 @font-face {
@@ -21,8 +19,7 @@
   font-style: normal;
   font-weight: 500;
   font-display: auto;
-  src: local('SF Pro Text'),
-    url('/fonts/SFProDisplay-Medium.woff2') format('woff2');
+  src: local('SF Pro Text'), url('/fonts/SFProDisplay-Medium.woff2') format('woff2');
 }
 
 @font-face {
@@ -30,8 +27,7 @@
   font-style: normal;
   font-weight: 600;
   font-display: auto;
-  src: local('SF Pro Text'),
-    url('/fonts/SFProDisplay-Semibold.woff2') format('woff2');
+  src: local('SF Pro Text'), url('/fonts/SFProDisplay-Semibold.woff2') format('woff2');
 }
 
 @font-face {
@@ -39,8 +35,7 @@
   font-style: normal;
   font-weight: 700;
   font-display: auto;
-  src: local('SF Pro Text'),
-    url('/fonts/SFProDisplay-Bold.woff2') format('woff2');
+  src: local('SF Pro Text'), url('/fonts/SFProDisplay-Bold.woff2') format('woff2');
 }
 
 :root {
@@ -113,4 +108,19 @@ h6 {
 
 .body-font {
   font-family: var(--body-font);
+}
+
+.big-title {
+  font-size: var(--big-title-size);
+  font-weight: var(--bold-font);
+  letter-spacing: -0.015em;
+  margin-bottom: 0.75rem;
+}
+
+.big-description {
+  max-width: var(--large-max-width);
+  color: var(--text-color-alt);
+  font-size: var(--big-body-size);
+  font-weight: var(--medium-font);
+  line-height: var(--title-line-height);
 }

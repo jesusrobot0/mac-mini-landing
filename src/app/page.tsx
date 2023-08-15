@@ -1,4 +1,4 @@
-import { Navbar, HeroBanner } from './components'
+import { Navbar, HeroBanner, ChipPresentation } from './components'
 
 export default function HomePage() {
   return (
@@ -7,6 +7,7 @@ export default function HomePage() {
 
       <main className="main">
         <HeroBanner />
+        <ChipPresentation />
         <section id="why-mac" className="section-placeholder">
           <h2>Por qué la mac</h2>
         </section>
