@@ -1,0 +1,107 @@
+.feature-panel {
+  --padding: 2rem;
+  --max-width: 25rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.feature-panel .content {
+  padding: var(--padding);
+}
+
+.feature-panel .title {
+  font-size: var(--normal-body-size);
+  margin-bottom: 1.5rem;
+}
+
+.feature-panel .subtitle {
+  font-weight: var(--bold-font);
+  font-size: 2rem;
+  margin-bottom: 1.25rem;
+}
+
+.feature-panel .description {
+  margin-bottom: 2rem;
+  font-family: var(--display-font);
+  font-weight: var(--semi-bold-font);
+  font-size: 1.25rem;
+  line-height: 1.4em;
+  letter-spacing: 0.012em;
+}
+
+.feature-panel .button {
+  padding: 0.75rem 1.25rem;
+}
+
+.feature-panel .picture {
+  --width: 90%;
+  display: block;
+  margin-left: auto;
+  width: var(--width);
+  height: fit-content;
+}
+
+@media screen and (min-width: 360px) {
+  .feature-panel {
+    border-radius: 1.25rem;
+  }
+
+  .feature-panel .subtitle {
+    font-size: var(--bigger-title-size);
+  }
+}
+
+@media screen and (min-width: 734px) {
+  .feature-panel {
+    --padding: 2.5rem;
+  }
+
+  .feature-panel .content {
+    max-width: var(--max-width);
+    padding-right: 0;
+    box-sizing: content-box;
+  }
+
+  .feature-panel .title {
+    margin-bottom: 5rem;
+  }
+
+  .feature-panel .subtitle {
+    margin-bottom: 1.5rem;
+  }
+
+  .feature-panel .description {
+    margin-bottom: 3.5rem;
+  }
+
+  .feature-panel .button {
+    white-space: nowrap;
+  }
+
+  .feature-panel .picture {
+    --width: 32rem;
+    --spacing: 4rem;
+    position: absolute;
+    bottom: 0;
+    left: calc(var(--width) + var(--spacing));
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .feature-panel {
+    --max-width: 31.25rem;
+  }
+
+  .feature-panel .title {
+    margin-bottom: 5.5rem;
+  }
+
+  .feature-panel .description {
+    margin-bottom: 4.5rem;
+  }
+
+  .feature-panel .picture {
+    --width: 45rem;
+    --spacing: 0rem;
+  }
+}

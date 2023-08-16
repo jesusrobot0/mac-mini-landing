@@ -10,6 +10,7 @@ export function HeroBanner() {
           className="picture"
           fill
           priority
+          quality={100}
         />
         <Image
           src="/media/img/hero-image-dark.jpg"
@@ -17,6 +18,7 @@ export function HeroBanner() {
           className="picture dark"
           fill
           priority
+          quality={100}
         />
       </div>
       <div className="container">

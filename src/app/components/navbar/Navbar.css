@@ -41,25 +41,6 @@
   text-decoration: none;
 }
 
-.button {
-  display: inline-block;
-  padding: 0.5rem 1rem;
-  color: var(--text-color);
-  border-radius: 100px;
-  background-color: var(--accent-color);
-  transition: background-color var(--time);
-}
-
-.button:hover {
-  text-decoration: none;
-  background-color: var(--accent-color-alt);
-}
-
-.button.tiny {
-  padding: 0.25rem 0.5rem;
-  font-size: var(--smaller-body-size);
-}
-
 /* ---------- desktop styles ---------- */
 
 @media screen and (max-width: 1024px) {

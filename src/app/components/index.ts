@@ -1,3 +1,5 @@
 export { Navbar } from './navbar/Navbar'
 export { HeroBanner } from './hero-banner/HeroBanner'
 export { ChipPresentation } from './chip-presentation/ChipPresentation'
+export { MacFeatures } from './mac-features/MacFeatures'
+export { CPU } from './features/cpu/CPU'
