@@ -5,9 +5,3 @@
 .feature-panel.cpu .subtitle .accent {
   color: #c48cfc;
 }
-
-@media screen and (min-width: 734px) {
-  .feature-panel .break-line {
-    display: none;
-  }
-}

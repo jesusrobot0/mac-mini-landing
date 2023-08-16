@@ -104,4 +104,8 @@
     --width: 45rem;
     --spacing: 0rem;
   }
+
+  .feature-panel .break-line {
+    display: none;
+  }
 }
