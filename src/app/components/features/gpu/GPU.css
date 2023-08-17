@@ -1,0 +1,25 @@
+.feature-panel.gpu .video {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: var(--z-negative);
+}
+
+@media screen and (min-width: 734px) {
+  .feature-panel.gpu .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .feature-panel.gpu .content {
+    max-width: inherit;
+  }
+
+  .feature-panel.gpu .characteristics-container {
+    gap: 0;
+    padding-top: 3rem;
+  }
+}

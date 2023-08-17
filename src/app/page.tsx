@@ -1,4 +1,4 @@
-import { Navbar, HeroBanner, ChipPresentation, MacFeatures, CPU } from './components'
+import { Navbar, HeroBanner, ChipPresentation, MacFeatures, CPU, GPU } from './components'
 
 export default function HomePage() {
   return (
@@ -10,6 +10,7 @@ export default function HomePage() {
         <ChipPresentation />
         <MacFeatures>
           <CPU />
+          <GPU />
         </MacFeatures>
         <section id="specs" className="section-placeholder">
           <h2>Especificaciones</h2>
