@@ -1,0 +1,38 @@
+.feature-panel.automatic-learning {
+  background-image: linear-gradient(-135deg, #590a0d 0%, #10071c 100%);
+}
+
+.feature-panel.automatic-learning .description {
+  font-size: var(--big-body-size);
+  line-height: 1.2;
+}
+
+.feature-panel.automatic-learning .characteristics-container {
+  font-weight: var(--medium-font);
+}
+
+@media screen and (min-width: 734px) {
+  .feature-panel.automatic-learning .characteristics-container {
+    --column-grid: 9.25rem;
+    gap: 1rem;
+    align-items: end;
+  }
+
+  .feature-panel.automatic-learning .number {
+    --size: 5rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .feature-panel.automatic-learning .content {
+    --max-width: 35rem;
+  }
+
+  .feature-panel.automatic-learning .characteristics-container {
+    --column-grid: 12.5rem;
+  }
+
+  .feature-panel.automatic-learning .characteristic {
+    font-size: 1rem;
+  }
+}
